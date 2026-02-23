@@ -10,7 +10,7 @@ Freundlier is a next-generation psychological intake platform that uses RAG (Ret
 ---
 
 ## 🏆 Built by Team Med-Excel
-This project was conceptualized, architected, and engineered over a single hackathon weekend by a multi-disciplinary team of medical and tech professionals:
+This project was conceptualized, architected, and engineered by a team of medical and life sciences professionals as a project for the 48-hour hackathon conducted to showcase the development of learners in the HEC Generative AI Training. This training was delivered by ASPIRE-Pakistan, iCodeGuru, & PakAngels, and sponsored by HEC-Pakistan, ULEF-PK, & NCEAC:
 
 * **Burhan Haider** (M.Phil Biological Sciences) – Lead Architecture & AI Integration
 * **Amber Roohee** (Clinical Psychologist) – Clinical Workflow & Psychological Guardrails
@@ -32,8 +32,8 @@ This project was conceptualized, architected, and engineered over a single hacka
 To run this project locally:
 
 1. **Clone the repository:**
-   \`\`\`bash
-   git clone https://github.com/burhanhaider24/freundlier-triage.git
+   ```bash
+   git clone [https://github.com/burhanhaider24/freundlier-triage.git](https://github.com/burhanhaider24/freundlier-triage.git)
    \`\`\`
 2. **Install dependencies:**
    \`\`\`bash
