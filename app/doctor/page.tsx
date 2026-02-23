@@ -156,7 +156,7 @@ export default function DoctorDashboard() {
     <div className="min-h-screen bg-[#F8FAFC]">
       <nav className="bg-white/80 backdrop-blur-lg border-b border-gray-100 sticky top-0 z-50 px-8 py-4 flex justify-between items-center shadow-[0_4px_20px_rgb(0,0,0,0.02)]">
         <div className="flex items-center gap-4">
-          <Image src="/logo.png" alt="Logo" width={140} height={40} className="h-10 w-auto object-contain" priority />
+          <Image src="/logo.png" alt="Logo" width={220} height={60} className="h-14 sm:h-16 w-auto object-contain" priority />
           <div className="border-l-2 border-gray-100 pl-4 z-10">
             <h1 className="font-bold text-xl text-gray-900 tracking-tight">Freundlier</h1>
             <p className="text-[11px] font-black tracking-widest text-[#69C3E3] uppercase mt-0.5">By Team Med-Excel</p>

@@ -192,7 +192,7 @@ export default function PatientApp() {
       <div className="w-full max-w-4xl mx-auto pt-6 px-4 shrink-0 z-10">
         <div className="bg-white/80 backdrop-blur-xl border border-gray-100 rounded-3xl px-6 py-3 flex justify-between items-center shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div className="flex items-center gap-4">
-            <Image src="/logo.png" alt="Freundlier Logo" width={180} height={50} className="h-12 w-auto object-contain" priority />
+            <Image src="/logo.png" alt="Freundlier Logo" width={220} height={60} className="h-14 sm:h-16 w-auto object-contain" priority />
             <div className="hidden sm:block border-l-2 pl-4 border-gray-100 z-10">
               <p className="text-[10px] text-[#69C3E3] font-black tracking-widest uppercase mt-0.5">By Team Med-Excel</p>
             </div>

@@ -37,7 +37,8 @@ export default function LoginPage() {
       <div className="absolute bottom-[-20%] left-[20%] w-[30rem] h-[30rem] bg-blue-100/50 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
 
       <div className="sm:mx-auto sm:w-full sm:max-w-md flex flex-col items-center relative z-10">
-        <div className="relative w-72 h-24 mb-6 drop-shadow-sm">
+        {/* THE FIX: Bigger Logo Container */}
+        <div className="relative w-96 h-36 mb-4 drop-shadow-md scale-110">
           <Image src="/logo.png" alt="Freundlier Logo" fill className="object-contain" priority />
         </div>
         <h2 className="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600">
@@ -68,10 +69,11 @@ export default function LoginPage() {
             </button>
           </form>
           
-          {/* TEAM MED-EXCEL BRANDING */}
+          {/* TEAM MED-EXCEL BRANDING (Normal Text) */}
           <div className="mt-8 text-center pb-2">
             <p className="text-[10px] font-bold text-gray-400 tracking-widest uppercase mb-1">Architected & Engineered By</p>
-            <p className="text-sm font-black bg-clip-text text-transparent bg-gradient-to-r from-[#69C3E3] to-indigo-500 tracking-tight">
+            {/* THE FIX: Removed font-black, added font-normal */}
+            <p className="text-sm font-normal bg-clip-text text-transparent bg-gradient-to-r from-[#69C3E3] to-indigo-500 tracking-tight">
               Team Med-Excel
             </p>
           </div>
