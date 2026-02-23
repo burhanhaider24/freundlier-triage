@@ -7,7 +7,7 @@
 
 Freundlier is an AI-powered clinical triage system designed to support mental health intake workflows through structured conversation, crisis detection, and real-time clinician reporting. Built during the 48-hour HEC Generative AI Hackathon, Freundlier demonstrates how Generative AI can be responsibly deployed in high-risk healthcare environments.
 
-*(Drop a screenshot of your Doctor Dashboard here!)*
+
 
 ---
 
