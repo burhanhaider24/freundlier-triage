@@ -1,49 +1,70 @@
 # 🏥 Freundlier Clinical Triage
-**An AI-Powered Enterprise Clinical Triage System**
+**Safety-Engineered AI for Mental Health Intake**
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)](#)
 [![Built with Next.js](https://img.shields.io/badge/Built_with-Next.js_14-black?logo=next.js)](#)
 [![Database by Supabase](https://img.shields.io/badge/Database-Supabase-green?logo=supabase)](#)
 
-Freundlier is a next-generation psychological intake platform that uses RAG (Retrieval-Augmented Generation), Multi-LLM failover architectures, and real-time database syncing to safely bridge the gap between patients in distress and clinical professionals.
+Freundlier is an AI-powered clinical triage system designed to support mental health intake workflows through structured conversation, crisis detection, and real-time clinician reporting. Built during the 48-hour HEC Generative AI Hackathon, Freundlier demonstrates how Generative AI can be responsibly deployed in high-risk healthcare environments.
+
+*(Drop a screenshot of your Doctor Dashboard here!)*
 
 ---
 
-## 🏆 Built by Team Med-Excel
-This project was conceptualized, architected, and engineered by a team of medical and life sciences professionals as a project for the 48-hour hackathon conducted to showcase the development of learners in the HEC Generative AI Training. This training was delivered by ASPIRE-Pakistan, iCodeGuru, & PakAngels, and sponsored by HEC-Pakistan, ULEF-PK, & NCEAC:
+## 🔑 Live Demo Credentials
+We invite the judges to test the live Multi-LLM triage and real-time dashboard themselves:
+
+**🔗 Live App:** [https://freundlier-triage.vercel.app](https://freundlier-triage.vercel.app)
+
+* **👨‍⚕️ Clinician View:** `dramber@freundlier.com` | PW: `123456`
+* **🤒 Patient 1 (Male, 23):** `patient1@freundlier.com` | PW: `123456`
+* **🤒 Patient 2 (Female, 22):** `patient2@freundlier.com` | PW: `123456`
+
+---
+
+## 🧠 System Overview
+Freundlier is not a generic chatbot wrapper. It combines **RAG**, **Multi-LLM failover orchestration**, **Regex-anchored crisis detection**, and **Real-time clinician dashboards** to create a controlled, safety-aware AI intake pipeline.
+
+### ⚙️ Architecture Highlights
+
+*(Drop a screenshot of your Architecture Diagram or Patient Chat here!)*
+
+* **🔁 Multi-LLM Failover Engine:** Primary inference via Groq (LLaMA 3). Automatic zero-downtime hot-swap to OpenRouter (Meta-Llama) and Google Gemini if rate limits occur. 
+* **🛡️ Bilingual Crisis Tripwires:** English + Urdu regex boundary detection with secondary LLM validation before escalation. Instantly locks the session on confirmed risk.
+* **📚 RAG-Grounded Responses:** Gemini embeddings generate semantic vectors, retrieving relevant CBT knowledge from Supabase to reduce hallucination risk.
+* **📊 Real-Time Doctor Workspace:** Live triage queue via Supabase subscriptions, visual risk indicators, and printable clinical PDF exports.
+
+---
+
+## 🌍 Impact & Alignment
+Freundlier supports:
+* **SDG 3 (Target 3.4):** Early detection and structured intervention for mental health risk.
+* **SDG 9:** Resilient AI healthcare infrastructure.
+* **SDG 10 (Target 10.8):** Bilingual access to reduce healthcare inequality.
+
+## 💼 Business Model
+Designed as a subscription-based SaaS platform for clinics and hospitals:
+* **Basic Tier:** AI Triage + Dashboard
+* **Pro Tier:** Structured Reports + Priority Alerts
+* **Enterprise Tier:** EHR Integration + Custom Deployment
+
+---
+
+## 👥 Built by Team Med-Excel
+Developed by a multidisciplinary medical and life sciences team for the HEC Generative AI Training (sponsored by HEC-Pakistan, ULEF-PK, & NCEAC):
 
 * **Burhan Haider** (M.Phil Biological Sciences) – Lead Architecture & AI Integration
-* **Amber Roohee** (Clinical Psychologist) – Clinical Workflow & Psychological Guardrails
-* **Maryam Mudassir** (MBBS Student) – Medical Logic & Patient Experience
-* **Muhammad Zahid Iqbal** (Pharm D) – Pharmacological Context & System Testing
+* **Amber Roohee** (Clinical Psychologist) – Clinical Guardrails & Workflow
+* **Maryam Mudassir** (MBBS Student) – Medical Logic & Patient UX
+* **Muhammad Zahid Iqbal** (Pharm D) – Pharmacological Context & Testing
 * **Mehak Jairam** (DPT) – Rehabilitation Triage & QA
 
 ---
 
-## 🚀 Key Architectural Features
-- **Multi-LLM Failover Engine:** Primary inference via Groq (Llama 3), with an automatic, zero-downtime hot-swap to Google Gemini and OpenRouter if rate limits are hit.
-- **Strict Regex Crisis Tripwires:** Bilingual (English/Urdu) crisis detection that intercepts self-harm language, triggers a secondary AI validation, and instantly locks the UI while alerting the doctor.
-- **Real-Time Doctor Dashboard:** Built on Supabase web-sockets, allowing clinicians to see live alerts, manage appointments, and view risk assessments instantly.
-- **Automated Clinical Artifacts:** Generates formatted, printable PDF clinical summaries directly from the AI triage parsing engine.
+## 🚀 Local Setup
+1. **Clone the repository:** `git clone https://github.com/burhanhaider24/freundlier-triage.git`
+2. **Install dependencies:** `npm install`
+3. **Environment Variables:** Create a `.env.local` file with keys for Supabase, Groq, Gemini, and OpenRouter.
+4. **Run development server:** `npm run dev`
 
----
-
-## 💻 Setup & Instructions
-To run this project locally:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/burhanhaider24/freundlier-triage.git](https://github.com/burhanhaider24/freundlier-triage.git)
-   \`\`\`
-2. **Install dependencies:**
-   \`\`\`bash
-   npm install
-   \`\`\`
-3. **Environment Variables:**
-   Create a `.env.local` file in the root directory and add your keys for Supabase, Groq, Gemini, and OpenRouter.
-4. **Run the development server:**
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-5. **Access the Application:**
-   Open [http://localhost:3000/login](http://localhost:3000/login) in your browser.
+> **⚠️ Disclaimer:** Freundlier is a hackathon prototype and is not intended to replace licensed mental health professionals.
